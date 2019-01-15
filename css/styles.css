@@ -1,0 +1,16 @@
+.clickable {
+  color: blue;
+}
+.clickable:hover {
+  text-decoration: underline;
+  cursor: crosshair;
+  color: limegreen;
+}
+p {
+  text-align: center;
+}
+.jumbotron {
+  border: solid black 2px;
+  background-color: yellow;
+  display: none;
+}

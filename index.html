@@ -3,117 +3,312 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <script src="js/jquery.flip.js"></script>
+    <title>Flashcards</title>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <div class="container">
-      <h1>Intro to Programming Vocabulary:</h1>
+      <button class="btn btn-success" id="green">Green</button>
+      <h1>Intro to Programming Vocabulary: JavaScript and jQuery</h1>
 
 
       <div class="row">
         <div class="col-md-2">
           <div class="well">
-              <h3>JavaScript (JS)</h3>
+            <h3><span class="clickable" id="js1">JavaScript (JS)</span></h3>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="jumbotron" id="js">
+            <div class="card">
+              <div class="front">
+                <p>is a programming language that manipulates the DOM (Document Object Model) and makes your webpage interactive.<br><span class="clickable">Flip</span></p>
+              </div>
+              <div class="back">
+                <p>Yay! You are a genius!</p>
+              </div>
             </div>
           </div>
-          <div class="col-md-10">
-            <div class="well" id="js">
-              <p>is a programming language that manipulates the DOM (Document Object Model) and makes your webpage interactive.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="well">
+            <h3><span class="clickable" id="operators1">Operators</span></h3>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="jumbotron" id="operators">
+            <div class="card">
+              <div class="front">
+                <p>a special character or characters that indicates an action to be performed.<br><span class="clickable">Flip</span></p>
+              </div>
+              <div class="back">
+                <p>Ex: +, -, *, /, and % (modulo)</p>
+              </div>
             </div>
           </div>
-      </div>
-      <div class="row">
-        <div class="col-md-2">
-          <div class="well">
-            <h3>Operators</h3>
-          </div>
-        </div>
-        <div class="col-md-10">
-          <div class="well" id="js">
-            <p>a special character or characters that indicates an action to be performed.</p>
-            <p>Ex: +, -, *, /, and % (modulo)</p>
-          </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-2">
           <div class="well">
-            <h3>Variables</h3>
+            <h3><span class="clickable" id="variables1">Variables</span></h3>
           </div>
         </div>
         <div class="col-md-10">
-          <div class="well" id="js">
-            <p>can be thought of as containers used to store information. They allow for a way to label data with a descriptive name.</p>
+          <div class="jumbotron" id="variables">
+            <div class="card">
+              <div class="front">
+                <p>can be thought of as containers used to store information. They allow for a way to label data with a descriptive name.<br><span class="clickable">Flip</span></p>
+              </div>
+              <div class="back">
+                <p>var = ("Hello World")</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-2">
           <div class="well">
-            <h3>Variables naming conventions</h3>
+            <h3><span class="clickable" id="varname1">Variables naming conventions</span></h3>
           </div>
         </div>
         <div class="col-md-10">
-          <div class="well" id="js">
-            <p>assigning a name to your variable. Variable names are case-sensitive and should always start with a letter. If your name is more than one word, use Lower Camel Case.</p>
-              <p>Ex: myName</p>
+          <div class="jumbotron" id="varname">
+            <div class="card">
+              <div class="front">
+                <p>assigning a name to your variable. Variable names are case-sensitive and should always start with a letter. If your name is more than one word, use Lower Camel Case.<br><span class="clickable">Flip</span></p>
+              </div>
+              <div class="back">
+                <p>Ex: myName</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-2">
           <div class="well">
-            <h3>Functions</h3>
+            <h3><span class="clickable" id="functions1">Functions</span></h3>
           </div>
         </div>
         <div class="col-md-10">
-          <div class="well" id="js">
-            <p>perform actions in the browser.</p>
+          <div class="jumbotron" id="functions">
+            <div class="card">
+              <div class="front">
+                <p>perform actions in the browser.<br><span class="clickable">Flip</span></p>
+              </div>
+              <div class="back">
+                <p>Ex: parseInt(), toString(), alert(), confirm(), prompt()</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="well">
+            <h3><span class="clickable" id="methods1">Methods</span></h3>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="jumbotron" id="methods">
+            <div class="card">
+              <div class="front">
+                <p>an action run on  a piece of data. Think of it as a message you send to a piece of data, and the result is the response.<br><span class="clickable">Flip</p>
+              </div>
+              <div class="back">
+                <p>Ex: .toExponential()  .toFixed()  toPrecision()  charAt()  toUpperCase()  toLowerCase()  concat()</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="well">
+            <h3><span class="clickable" id="arguments1">Arguments</span></h3>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="jumbotron" id="arguments">
+            <div class="card">
+              <div class="front">
+                <p>Some methods take one or more arguments that provide the method with additional information to help it perform its action.<br><span class="clickable">Flip</p>
+              </div>
+              <div class="back">
+                <p>Ex: string</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="well">
+            <h3><span class="clickable" id="parameters1">Parameters</span></h3>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="jumbotron" id="parameters">
+            <div class="card">
+              <div class="front">
+                <p>The parameters, in a function call, are the function's arguments. The parameters hold the argument.<br><span class="clickable">Flip</p>
+              </div>
+              <div class="back">
+                <p>Ex: function functionName (parameter1, parameter2, parameter3) {<br>//code to be executed.<br>}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="well">
+            <h3><span class="clickable" id="return1">Return</span></h3>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="jumbotron" id="return">
+            <div class="card">
+              <div class="front">
+                <p>The return value is the method's response.<br><span class="clickable">Flip</p>
+              </div>
+              <div class="back">
+                <p>Ex: undefined, string, boolean.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="well">
+            <h3><span class="clickable">Chaining Methods</span></h3>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="jumbotron" id="chaining">
+            <p>Calling a method directly on the return value of another method.</p>
+              <p>Ex: "foo".concat("bar").toUpperCase();</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="well">
+            <h3><span class="clickable">Strings</span></h3>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="jumbotron" id="strings">
+            <p>a line of text. Using the function toString(): converts a number to a string.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="well">
+            <h3><span class="clickable">Booleans</span></h3>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="jumbotron" id="booleans">
+            <p>Returns true or false. These are not strings.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="well">
+            <h3><span class="clickable">Undefined</span></h3>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="jumbotron" id="undefined">
+            <p>an object (such as a variable) without a defined value.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="well">
+            <h3><span class="clickable">NaN</span></h3>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="jumbotron" id="nan">
+            <p>Stands for Not A Number. However, it is a type of number.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="well">
+            <h3><span class="clickable">Escape</span></h3>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="jumbotron" id="escape">
+            <p>These marks \\. It lets you use "" or () in a string and tells the computer that the string isn't over yet and this just adding grammatical punctuations.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="well">
+            <h3><span class="clickable">Alert</span></h3>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="jumbotron" id="alert">
+            <p>A function. it opens a dialog box and returns undefined.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="well">
+            <h3><span class="clickable">Comments</span></h3>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="jumbotron" id="comments">
+            <p>Anything following // on a line in JavaScript is ignored by the computer. Comments are useful for leaving notes in your code for yourself and other programmers.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="well">
+            <h3><span class="clickable">jQuery</span></h3>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="jumbotron" id="jquery">
+            <p>Is a library that JavaScript uses/calls on to make programming interactivity easier.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="well">
+            <h3><span class="clickable">Attributes</span></h3>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="jumbotron" id="attributes">
+            <p>A method used to return the attribute with the specified name of an element.</p>
+            <p>getAttrbute()</p>
           </div>
         </div>
       </div>
 
-
-
-
-
-
-
-      <p>Methods</p>
-        <p>an action run on  a piece of data. Think of it as a message you send to a piece of data, and the result is the response.</p>
-          <p>Ex: .toExponential();  .toFixed();  toPrecision();</p>
-      <p>Arguments</p>
-        <p>Some methods take one or more arguments that provide the method with additional information to help it perform its action.</p>
-      <p>Parameters</p>
-        <p>The parameters, in a function call, are the function's arguments. The parameters hold the argument.</p>
-      <p>Return</p>
-        <p>The return value is the method's response.</p>
-          <p>Ex: undefined, string, boolean.</p>
-      <p>Chaining methods</p>
-        <p>Calling a method directly on the return value of another method.</p>
-          <p>Ex: "foo".concat("bar").toUpperCase();</p>
-      <p>Strings</p>
-        <p>a line of text. Using the function toString(): converts a number to a string.</p>
-      <p>Booleans</p>
-        <p>Returns true or false. These are not strings.</p>
-      <p>Undefined</p>
-        <p>an object (such as a variable) without a defined value.</p>
-      <p>NaN</p>
-        <p>Stands for Not A Number. However, it is a type of number.</p>
-      <p>Escape</p>
-        <p>These marks \\. It lets you use "" or () in a string and tells the computer that the string isn't over yet and this just adding grammatical punctuations.</p>
-      <p>Alert</p>
-        <p>A function. it opens a dialog box and returns undefined.</p>
-      <p>Comments</p>
-        <p>Anything following // on a line in JavaScript is ignored by the computer. Comments are useful for leaving notes in your code for yourself and other programmers.</p>
-      <p>jQuery</p>
-        <p>Is a library that JavaScript uses/calls on to make programming interactivity easier.</p>
-      <p>Attributes</p>
-        <p>A method used to return the attribute with the specified name of an element.</p>
-        <p>getAttrbute()</p>
 
     </div>
   </body>
