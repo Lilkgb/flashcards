@@ -44,5 +44,53 @@ $(document).ready(function() {
     $(".card").flip();
   });
 
+  $("#chaining1").click(function() {
+    $("#chaining").slideToggle("slow");
+    $(".card").flip();
+  });
 
+  $("#strings1").click(function() {
+    $("#strings").slideToggle("slow");
+    $(".card").flip();
+  });
+
+  $("#booleans1").click(function() {
+    $("#booleans").slideToggle("slow");
+    $(".card").flip();
+  });
+
+  $("#undefined1").click(function() {
+    $("#undefined").slideToggle("slow");
+    $(".card").flip();
+  });
+
+  $("#nan1").click(function() {
+    $("#nan").slideToggle("slow");
+    $(".card").flip();
+  });
+
+  $("#escape1").click(function() {
+    $("#escape").slideToggle("slow");
+    $(".card").flip();
+  });
+
+  $("#alert1").click(function() {
+    $("#alert").slideToggle("slow");
+    $(".card").flip();
+  });
+
+  $("#comments1").click(function() {
+    $("#comments").slideToggle("slow");
+    $(".card").flip();
+  });
+
+  $("#jquery1").click(function() {
+    $("#jquery").slideToggle("slow");
+    $(".card").flip();
+  });
+
+  $("#attributes1").click(function() {
+    $("#attributes").slideToggle("slow");
+    $(".card").flip();
+  });
 });
