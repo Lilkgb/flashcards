@@ -20,6 +20,7 @@ img {
 
 .clickable {
   color: blue;
+  background-color: lightgreen;
 }
 
 .clickable:hover {
