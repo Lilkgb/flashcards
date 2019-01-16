@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+
   $("#js1").click(function() {
     $("#js").slideToggle("slow");
     $(".card").flip();
@@ -92,5 +94,20 @@ $(document).ready(function() {
   $("#attributes1").click(function() {
     $("#attributes").slideToggle("slow");
     $(".card").flip();
+  });
+
+  $("button#white").click(function() {
+    $("body").removeClass();
+    $("body").addClass("white-background");
+  });
+
+  $("button#black").click(function() {
+    $("body").removeClass();
+    $("body").addClass("black-background");
+  });
+
+  $("button#red").click(function() {
+    $("body").removeClass();
+    $("body").addClass("red-background");
   });
 });

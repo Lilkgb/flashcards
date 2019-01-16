@@ -1,31 +1,56 @@
-body {
-  background-color: black;
-}
-
 h1 {
-  color: white;
+  color: #b8babc;
   text-align: center;
   padding: 50px;
+  text-decoration: underline;
+}
+
+h4 {
+  color: #b8babc;
+}
+
+p {
+  text-align: center;
+}
+
+img {
+  max-height: 190px;
+  max-width: 190px;
 }
 
 .clickable {
   color: blue;
 }
+
 .clickable:hover {
   text-decoration: underline;
   cursor: crosshair;
   color: limegreen;
 }
-p {
-  text-align: center;
-}
+
 .jumbotron {
   border: solid black 2px;
   background-color: yellow;
   display: none;
   padding-bottom: 70px;
 }
-img {
-  max-height: 190px;
-  max-width: 190px;
+
+.white-background {
+  background-color: white;
+  color: black;
+}
+
+.black-background {
+  background-color: black;
+  color: white;
+}
+
+#black {
+  background-color: black;
+  color: white;
+}
+
+.red-background {
+  background-color: red;
+  color: green;
 }
